@@ -1,0 +1,79 @@
+---
+import { Picture } from 'astro:assets';
+import img from '~/assets/millie.jpg';
+import { SiteDescription, SiteTitle } from '~/config';
+import MarkdownLayout from '~/layouts/MarkdownLayout.astro';
+---
+
+<MarkdownLayout
+	title={SiteTitle}
+	description={SiteDescription}
+	hide={['title', 'comments']}
+	currentNav="Home"
+>
+	<div class="flex flex-col items-center gap-4">
+		<Picture class="lg:max-w-md" src={img} formats={['avif', 'webp']} alt="a dog" loading="eager" />
+		<div>
+			<h1>Hello there! I am Millie👋</h1>
+			<p>
+				If you are reading this, then that means you have been assigned to take care of me while my parents are away. Don't worry, I am only a little crazy... Anyways, let me tell you a bit about myself:
+			</p>
+			<ul class="list-disc">
+				<li>I am a crazy attention seeker with only child syndrome. So, you better love me and only me.</li>
+				<li>I am super nosy and like to watch through the windows at people going by.</li>
+				<li>My attitude can be a bit much, but I am working through it... I swear...</li>
+			</ul>
+			<p>Now that you know a bit about me, let me tell you how to best take care of me. Below is a list of things my parents want you to do:</p>
+			<ul class="list-disc">
+				<li class="font-bold text-xl">Feeding Me:</li>
+				<ul class="list-disc">
+					<li>I like to eat 3 cups of food per day. I am trying to keep my figure for my hot girl summer.</li>
+					<ul class="list-disc">
+						<li>You can feed me 2-3 times per day.</li>
+						<ul class="list-disc">
+							<li>If 2 times a day:</li>
+							<ul class="list-disc">
+								<li>1 1/2 cups around 8am</li>
+								<li>1 1/2 cups around 5pm</li>
+							</ul>
+							<li>If 3 times a day:</li>
+							<ul class="list-disc">
+								<li>1 cup aroud 8am</li>
+								<li>1 cup around Noon</li>
+								<li>1 cup around 5pm</li>
+							</ul>
+						</ul>
+					</ul>
+				</ul>
+			</ul>
+			<p>Great! Now that you know how to feed me, my Dad told me to warn you of something. He says I drink my water too fast that it causes me to throw up. I can't help it. I just get excited and forget to breath. Just keep an eye on me and if I am drinking too fast, just hold me back.</p>
+			<p class="font-bold">For my bathroom breaks this is a schedule on when I like to do my business:</p>
+			<ul class="list-disc">
+				<li class="font-bold text-xl">8-9am:</li>
+				<ul class="list-disc">
+					<li>I like to be taken out of my cage in the morning to go pee and make a poop.</li>
+					<ul class="list-disc">
+						<li>My dad says I take forever to poop, but I get distracted by everything that moves. I want to play with everything. Sometimes I try and chase birds even though I can't fly. And, sometimes bugs tell me to pick them up with my mouth. We have fun, but Dad gets mad.</li>
+					</ul>
+				</ul>
+			</ul>
+			<ul class="list-disc">
+				<li class="font-bold text-xl">Early/late afternoon:</li>
+				<ul class="list-disc">
+					<li>It's nice to go for a walk around this time. Sometimes I poop, but not always.</li>
+					<li>If it is too hot outside, I would much rather do my business and then come back in the A.C. This Texas heat is offensive to me.</li>
+					<ul class="list-disc">
+						<li>Just remember to give me some water after this as I will be hot. And remember to not let me chug the water too fast and throw up.</li>
+					</ul>
+				</ul>
+			</ul>
+			<ul class="list-disc">
+				<li class="font-bold text-xl">Evening:</li>
+				<ul class="list-disc">
+					<li>I like to go on a little walk if it cooled down some since earlier in the day. Around this time I try to poop, but there's no telling how long it'll take with all the distractions.</li>
+				</ul>
+			</ul>
+			<p>Dad wants me to also mention that I need to stay away from other dogs and people. I tend to get crazy and jumpy at times. Also it's my time of the month, so male dogs get more aggressive towards me. Maybe it's cuz they want to play. This one time a male dog got behind me and... aoifwfq... oops nevermind. Dad got mad when I was typing that. You're probably thinking "Oh wow a dog smart enough to type?". Ya... I am very smart when I want to be. But, I never listen unless food is involved. Anywhoooo.... this is a little bit about me and I can't wait to spend time with you. I am super cuddly at the moment as it is a sensitive time for me.</p>
+		</div>
+	</div>
+</MarkdownLayout>
